@@ -1,0 +1,14 @@
+version: "3"
+services:
+ ver_server:
+  build: ./API
+  container_name: BitrixRedmine
+  environment:
+    PYTHONDONTWRITEBYTECODE: 1
+  restart: always
+  ports:
+    - 8090:5000
+  working_dir: /usr/src/app
+  command: python app.py
+  env_file:
+    - ./API/prod.env
