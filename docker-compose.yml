@@ -7,7 +7,7 @@ services:
     PYTHONDONTWRITEBYTECODE: 1
   restart: always
   ports:
-    - 8090:5000
+    - 8090:8090
   working_dir: /usr/src/app
   command: python app.py
   env_file:
