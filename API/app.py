@@ -8,6 +8,10 @@ import re
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def test():
+    return make_response('asd')
+
 @app.route('/archive', methods=['POST'])
 def arhive(projectId=None):
     try:
@@ -39,4 +43,4 @@ def unarhive(projectId=None):
         return make_response('', 500)
 
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0', port=8090)
+    app.run(debug=True,host='0.0.0.0', port=8091)
