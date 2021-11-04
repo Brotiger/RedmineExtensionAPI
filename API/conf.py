@@ -8,3 +8,4 @@ dbPort = os.environ['dbPort']
 
 rmArchiveId = os.environ['rmArchiveId']
 rmUnArchiveId = os.environ['rmUnArchiveId']
+rmUrlPattern = os.environ['rmUrlPattern']
