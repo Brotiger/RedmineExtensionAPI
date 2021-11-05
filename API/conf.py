@@ -1,5 +1,7 @@
 import os
 
+apiPort = os.environ['apiPort']
+
 dbHost = os.environ['dbHost']
 dbUser = os.environ['dbUser']
 dbPassword = os.environ['dbPassword']
